@@ -19,11 +19,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <img src="/static/img/school.jpg" alt="Здесь должна быть картинка, но она не нашлась.">
     <div class="bottomleft">
-            <span>{% block school_name %}{% endblock %}</span>
-        </div>
+            <span style="padding: 0.5vw;">{% block school_name %}{% endblock %}</span>
     </div>
     <marquee behavior="scroll" direction="left">{% block attention %}{% endblock %}</marquee>
-    <li>{% block link %}{% endblock %}</li>
+    <p style="margin-top: 4vw; margin-left: 7vw;">{% block link %}{% endblock %}</p>
     <section>
         <nav>
         <button>Успех</button>
@@ -40,6 +39,13 @@
         </article>
     </section>
     <footer>
+        <nav>
+            <h2>КОНТАКТЫ</h2>
+            <h3><b>МАОУ «ЛИЦЕЙ 44» Г. ЛИПЕЦКА</b></h3>
+            <p style="margin-left: 1vw;">398050, Россия, Липецкая обл., г. Липецк, ул. Плеханова, д. 51А, 49</p>
+            <p style="margin-left: 1vw;">+7 (4742) 28-02-02 (приёмная), 27-04-63</p>
+            <p style="margin-left: 1vw;">sc44lip@schools48.ru</p>
+        </nav>
     </footer>
 </body>
 </html>

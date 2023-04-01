@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -37,9 +38,8 @@ section::after {
 footer {
   background-color: #4b4d4b;
   padding: 10px;
-  text-align: center;
-  bottom: 0;
-  height: 17.3vw;
+  text-align: left;
+  display: block;
   color: white;
 }
 
@@ -68,10 +68,7 @@ img {
 li {
   list-style-type: none;
   position: relative;
-  margin-top: 4vw;
-  margin-left: 5vw;
   padding: 0.5em 0.5em 0.5em 2em;
-  font-family: sans-serif;
 }
 
 a {
@@ -98,3 +95,11 @@ marquee{
     margin-top: 1vw;
     color: red;
 }
+
+h2{
+    padding: 1vw;
+    font-size: 1.2vw;}
+
+h3{
+    padding: 1vw;
+    font-size: 1.1vw;}
