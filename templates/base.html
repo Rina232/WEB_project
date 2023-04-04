@@ -7,9 +7,9 @@
                     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
                     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
                     crossorigin="anonymous">
+    {% block head %}{% endblock %}
     <link rel="stylesheet"
           href="static/css/style.css" type="text/css">
-    <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="static/img/logo.jpg" type="image/jpg">
 
 </head>
@@ -25,14 +25,25 @@
     <p style="margin-top: 4vw; margin-left: 7vw;">{% block link %}{% endblock %}</p>
     <section>
         <nav>
-        <button>Успех</button>
-        <br>
-        <button>Информация</button>
-        <br>
-        <button>Расписание</button>
-        <br>
-        <button>Новости и объявления</button>
-        <button>Опросы</button>
+            <form action="/">
+                <button>Новости и объявления</button>
+            </form>
+            <br>
+            <form action="/">
+                <button>Информация</button>
+            </form>
+            <br>
+            <form action="/">
+                <button>Расписание</button>
+            </form>
+            <br>
+            <form action="/chess">
+                <button>Шахматы</button>
+            </form>
+            <br>
+            <form action="/">
+                <button>Опросы</button>
+            </form>
         </nav>
         <article>
             {% block content %}{% endblock %}

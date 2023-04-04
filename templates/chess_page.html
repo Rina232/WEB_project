@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}
-    {{school_name}}
+{% block head %}
+    <title>{{school_name}}</title>
+    <link rel="stylesheet" href="AbChess-x.x.x.css">
 {% endblock %}
 
 {% block school_name %}
@@ -17,4 +18,5 @@
 {% endblock %}
 
 {% block content %}
+    <div id="chessboard"></div>
 {% endblock %}
