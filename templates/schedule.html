@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>{{school_name}}</title>
+{% endblock %}
+
+{% block school_name %}
+    {{school_name}}
+{% endblock %}
+
+{% block attention %}
+    {{attention}}
+{% endblock %}
+
+{% block link %}
+    <a href="/">Главная</a><a> / Расписание</a>
+{% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center;"><b>Расписание</b></h1>
+    <br>
+    <br>
+    <table>
+        {% for i in schdl %}
+                {% if loop.index0 % 10 == 0 %}
+                    <tr><th colspan="11">{{i[0]}}</th></tr>
+                {% else %}
+                    <tr>
+                    {% for j in i %}
+                        <td>{{j}}</td>
+                    {% endfor %}
+                    </tr>
+                {% endif %}
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+{% endblock %}

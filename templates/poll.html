@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>{{school_name}}</title>
+{% endblock %}
+
+{% block school_name %}
+    {{school_name}}
+{% endblock %}
+
+{% block attention %}
+    {{attention}}
+{% endblock %}
+
+{% block link %}
+    <a href="/">Главная</a><a> / Опросы</a>
+{% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center; margin-bottom: 3.5vw;"><b>Опросы</b></h1>
+    {% for i in polls[::-1] %}
+    <div class="card bg-light mb-3">
+      <div class="card-header">
+        {{ i['date'] }}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ i['name'] }}</h5>
+        <p class="card-text">{{ i['description'] }} </p>
+        <a href="#" class="btn btn-primary">Пройти опрос</a>
+      </div>
+    </div>
+    {% endfor %}
+{% endblock %}

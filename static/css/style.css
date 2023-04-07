@@ -8,25 +8,15 @@ body {
   flex-direction: column;
 }
 
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
 nav {
   float: left;
   width: 30%;
-  padding: 20px;
 }
 
 article {
   float: left;
-  margin-top: 4vw;
-  padding: 20px;
-  width: 70%;
+  margin-top: 2vw;
+  width: 67%;
 }
 
 section::after {
@@ -37,7 +27,7 @@ section::after {
 
 footer {
   background-color: #4b4d4b;
-  padding: 10px;
+  margin-top: 10vw;
   text-align: left;
   display: block;
   color: white;
@@ -94,12 +84,32 @@ button {
 marquee{
     margin-top: 1vw;
     color: red;
-}
+    font-size: 1.5vw;}
+
+h1{
+    font-size: 3.2vw;}
 
 h2{
-    padding: 1vw;
     font-size: 1.2vw;}
 
 h3{
-    padding: 1vw;
     font-size: 1.1vw;}
+
+p{
+    font-size: 1vw;
+    line-height: 2vw;}
+
+table {
+    font-size: 1.2vw;
+}
+table, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+th {
+    font-size: 1.5vw;
+    text-align: center;}
+
+form {
+    margin-top: 1.5vw;}
