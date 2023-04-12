@@ -26,7 +26,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ i['name'] }}</h5>
         <p class="card-text">{{ i['description'] }} </p>
-        <a href="#" class="btn btn-primary">Пройти опрос</a>
+        <a href="/polls/{{i['name']}}" class="btn btn-primary">Пройти опрос</a>
       </div>
     </div>
     {% endfor %}
