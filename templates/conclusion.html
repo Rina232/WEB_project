@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>{{school_name}}</title>
+    <link rel="stylesheet"
+          href="../static/css/style.css" type="text/css">
+{% endblock %}
+
+{% block school_name %}
+    {{school_name}}
+{% endblock %}
+
+{% block attention %}
+    {{attention}}
+{% endblock %}
+
+{% block link %}
+    <a href="/">Главная</a><a> / Опросы</a>
+{% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center; margin-top: 5vw;"><b>{{con}}</b></h1>
+    <form action="/polls">
+        <button style="margin-left: 17vw; background-color:#35a155; width: 30vw; height: 5vw;">Вернуться к другим опросам</button>
+    </form>
+{% endblock %}
