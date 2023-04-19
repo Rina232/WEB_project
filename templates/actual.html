@@ -16,14 +16,11 @@
 {% endblock %}
 
 {% block link %}
-    <a href="/">Главная</a><a> / Опросы</a>
+    <a href="/">Главная</a><a> / {{article['name']}}</a>
 {% endblock %}
 
 {% block content %}
-    <h1 style="margin-top: 5vw;"><b>{{con}}</b></h1>
-    <form action="/polls">
-        <button style="margin-left: 17vw; background-color:#35a155; width: 30vw; height: 5vw;">Вернуться к другим опросам</button>
-    </form>
+    <h1><b>{{article['name']}}</b></h1>
 {% endblock %}
 
 {% block footer %}

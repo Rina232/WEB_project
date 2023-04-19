@@ -4,10 +4,11 @@
     <title>{{school_name}}</title>
     <link rel="stylesheet"
           href="static/css/style.css" type="text/css">
+    <link rel="shortcut icon" href="static/img/logo.jpg" type="image/jpg">
 {% endblock %}
 
 {% block school_name %}
-    {{school_name}}
+    {{inf['school_name']}}
 {% endblock %}
 
 {% block attention %}
@@ -19,4 +20,28 @@
 {% endblock %}
 
 {% block content %}
+    <article style="width: 60%">
+        <h4 style="text-align: center; margin-bottom: 3.5vw;"><b>Новости и объявления</b></h4>
+        <div class="card" style="width: 100%;">
+            <h5 class="card-header">Featured</h5>
+            <img class="card-img-top" src="" alt="Здесь должна быть картинка, но она не нашлась.">
+            <div class="card-body">
+            <h5 class="card-title">Название карточки</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+          </div>
+        </div>
+    </article>
+
+    <article style="width: 35%; margin-left: 3vw;">
+        <h4 style="text-align: center; margin-bottom: 3.5vw;"><b>Актуальное</b></h4>
+        {% for i in actual[::-1] %}
+            <a href="/actual/{{i['name']}}"><img src="../static/img/actual/{{i['pic']}}" alt="Здесь должна быть картинка, но она не нашлась." style="border-radius: 8px; margin-top: 0.5vw;"></a>
+        {% endfor %}
+    </article>
+{% endblock %}
+
+{% block footer %}
+        <h3 style="margin-left: 2vw; margin-bottom: 1.5vw;"><b>{{inf['full_school_name']}}</b></h3>
+        <p style="margin-left: 2vw; ">{{inf['address']}}<br>{{inf['phone_number']}}<br> {{inf['email']}}</p>
 {% endblock %}

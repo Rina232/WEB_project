@@ -8,7 +8,6 @@
                     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
                     crossorigin="anonymous">
     {% block head %}{% endblock %}
-    <link rel="shortcut icon" href="static/img/logo.jpg" type="image/jpg">
 
 </head>
 <body>
@@ -24,16 +23,13 @@
     <section>
         <nav>
             <form action="/">
-                <button>Новости и объявления</button>
-            </form>
-            <form action="/">
                 <button>Информация</button>
             </form>
             <form action="/schedule">
                 <button>Расписание</button>
             </form>
-            <form action="/chess">
-                <button>Шахматы</button>
+            <form action="/news">
+                <button>Новости и объявления</button>
             </form>
             <form action="/polls">
                 <button>Опросы</button>
@@ -45,8 +41,7 @@
     </section>
     <footer>
         <h2 style="margin-top: 2vw; margin-left: 2vw; margin-bottom: 1.5vw;">КОНТАКТЫ</h2>
-        <h3 style="margin-left: 2vw; margin-bottom: 1.5vw;"><b>МАОУ «ЛИЦЕЙ 44» Г. ЛИПЕЦКА</b></h3>
-        <p style="margin-left: 2vw; ">398050, Россия, Липецкая обл., г. Липецк, ул. Плеханова, д. 51А, 49 <br> +7 (4742) 28-02-02 (приёмная), 27-04-63 <br> sc44lip@schools48.ru</p>
+        {% block footer %}{% endblock %}
     </footer>
 {% block script %}{% endblock %}
 </body>

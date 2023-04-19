@@ -87,7 +87,9 @@ marquee{
     font-size: 1.5vw;}
 
 h1{
-    font-size: 3.2vw;}
+    font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 3vw;}
 
 h2{
     font-size: 1.2vw;}
@@ -95,13 +97,18 @@ h2{
 h3{
     font-size: 1.1vw;}
 
+h4{
+    font-size: 1.5vw;}
+
 p{
     font-size: 1vw;
     line-height: 2vw;}
 
 table {
-    font-size: 1.2vw;
+    width: 100%;
+    font-size: 1.1vw;
 }
+
 table, th, td {
   border: 1px solid grey;
   border-collapse: collapse;
@@ -111,5 +118,17 @@ th {
     font-size: 1.5vw;
     text-align: center;}
 
-form {
-    margin-top: 1.5vw;}
+form.poll_form {
+    margin-top: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #bce8c9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+label {
+    font-size: 1.3vw;}
+
+input::placeholder {
+    font-size: 1.3vw;}
