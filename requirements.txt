@@ -1,0 +1,5 @@
+SQLAlchemy~=2.0.4
+Werkzeug~=2.2.2
+WTForms~=3.0.1
+xlrd3~=1.1.0
+Flask~=2.2.3
