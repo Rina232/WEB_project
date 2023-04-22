@@ -135,7 +135,6 @@ def load_user(user_id):
 @app.route('/')
 def main_page():
     """Функция, отображающая главную страницу"""
-    print('sdfg')
     return render_template('main.html', inf=inf, attention=at, actual=actual, news=news[:5])
 
 

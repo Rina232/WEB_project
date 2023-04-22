@@ -4,6 +4,7 @@ from wtforms.validators import DataRequired
 
 
 class RegisterForm(FlaskForm):
+    """Класс регистрации пользователя"""
     name = StringField('Имя', validators=[DataRequired()])
     lastname = StringField('Фамилия', validators=[DataRequired()])
     age = IntegerField('Возраст', validators=[DataRequired()])
