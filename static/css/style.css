@@ -49,6 +49,12 @@ footer {
 	padding: 0 1vw 0 0;
 	line-height: 5.5vw;}
 
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 img {
     display: block;
     object-fit: cover;
@@ -56,8 +62,8 @@ img {
     height: auto;}
 
 li {
-  list-style-type: none;
   position: relative;
+  font-size: 1.2vw;
   padding: 0.5em 0.5em 0.5em 2em;
 }
 
@@ -101,8 +107,8 @@ h4{
     font-size: 1.5vw;}
 
 p{
-    font-size: 1vw;
-    line-height: 2vw;}
+    font-size: 1.2vw;
+    line-height: 2.5vw;}
 
 table {
     width: 100%;

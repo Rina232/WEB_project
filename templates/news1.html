@@ -16,15 +16,16 @@
 {% endblock %}
 
 {% block link %}
-<a href="/">Главная</a><a>Актуальное</a><a> / {{name}}</a>
+    <a href="/">Главная</a><a href="/news"> / Новости и объявления</a><a> / {{name}}</a>
 {% endblock %}
 
 {% block content %}
     {% for i in text %}
         {% if loop.first %}
-            <h5 style="font-size: 1.7vw; margin-bottom: 2vw;"><b>{{i}}</b></h5>
+            <h5 style="font-size: 1.7vw;"><b>{{i}}</b></h5>
+            <p style="color: #5b616e; font-size: 1vw; margin-bottom: 2vw;">{{date}}</p>
         {% elif '{' == i[0] %}
-            <img src="../static/img/actual/{{i[1:-2]}}" alt="Здесь должна быть картинка, но она не нашлась." style="border-radius: 15px; margin-top: 0.5vw; max-width: 50vw;  margin-bottom: 2vw;">
+            <img src="../static/img/news/{{i[1:-2]}}" alt="Здесь должна быть картинка, но она не нашлась." style="border-radius: 15px; margin-top: 0.5vw; max-width: 50vw;  margin-bottom: 2vw;">
         {% elif '*' == i[0] %}
             <p><b>{{i[1:]}}</b></p>
         {% elif '~' == i[0] %}
